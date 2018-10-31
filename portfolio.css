@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+   font-family: 'Open Sans', sans-serif;
+  background:url(https://tse4.mm.bing.net/th?id=OIP.DFy5p06WdNkht75WIdOtWAHaF0&pid=15.1&P=0&w=202&h=160);
+}
+a{
+  text-decoration:none;
+  color:green;
+}
+li{
+  list-style:none
+}
+
+#page-wrapper{
+  border: 1px solid white;
+}
+#header{
+  display:flex;
+  top:0;
+  margin: 0px auto;
+  width:100vw;
+  max-height:100vw;
+  height:72px;
+  position:fixed;
+  background-color:LightPink;
+}
+
+#navbar{
+  position:fixed;
+  margin-left:60vw;
+ }
+.nav-list{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+.nav-list li{
+  margin:1.5vw;
+}
+
+#welcome-section
+{
+  top: 0;
+  min-height: 100vh;
+  padding-top: 45vh;
+  text-align:center;
+  color:green;
+
+}
+#welcome-section h1{
+  color: green; 
+  margin-top:3vh;
+}
+#welcome-section p{
+    margin-top:3vh;
+   }
+#projects{
+  min-height: 70vh;
+  padding-top:30vh;
+}
+#projects h3{
+  margin-top:-25vh;
+  margin-left:40vw;
+}
+#projects ul{
+   display:grid;
+   justify-items:center;
+   margin:1vw auto;
+   margin-top:8vh;
+  /*justify-content:start;
+     align-items:center;
+     margin-left:10vw;
+     ;*/
+}
+#projects ul li {
+  padding:1vw;
+  margin:1vw;
+  border:1px solid pink ;
+  border-radius:1vw;
+}
+.project-title{
+  text-align:center;
+  margin-top:1vw;
+  color:green;
+}
+
+#Contact{
+  
+  padding:5vw;
+  margin-left:20vw;
+  min-height: 70vh;
+  margin-top:4vw;
+}
+#Contact ul{
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:10vw;
+}
+#Contact h3{
+  margin-left:16vw;
+}
+#Contact .contact-details
+{
+  border:2px solid pink;
+  border-radius:40px;
+  margin-left:5vw;
+  padding:3vw;
+}
+@media(max-width:600px)
+{
+  #projects ul{
+    grid-template-columns:repeat(1,1fr);
+  }
+}
+@media(min-width:601px)
+{
+    #projects ul{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+@media(min-width:1024px)
+{
+   #projects ul{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
